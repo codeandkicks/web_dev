@@ -1,0 +1,17 @@
+{
+  "name": "testproject",
+  "version": "2.1.1",
+  "description": "TestProject Thing",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "path": "^0.12.7"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
