@@ -5,6 +5,9 @@ body {
     margin: 0;
     padding: 20px;
 }
+h1 {
+    text-align: center;
+}
 .container {
     max-width: 1200px;
     margin: auto;
@@ -40,4 +43,69 @@ footer {
     text-align: center;
     padding: 20px;
     color: #777;
+}
+.bitmoji {
+    float: left; /* Float the image to the left */
+    width: 200px; /* Reduce the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Add some space between the image and the text */
+}
+
+/* Clearfix for the floated image */
+.content-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.navbar {
+    background-color: #333; /* Dark background for the navbar */
+    overflow: hidden;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    float: left;
+}
+
+.nav-links li a {
+    display: block;
+    color: white; /* White text color */
+    text-align: center;
+    padding: 14px 20px; /* Padding for spacing around the text */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.nav-item {
+    display: block;
+    color: white; /* White text color */
+    text-align: center;
+    padding: 14px 20px; /* Padding for spacing around the text */
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Change link color on hover for nav items */
+.nav-item:hover {
+    background-color: #ddd; /* Light background color for hover */
+    color: black; /* Change text color on hover */
+}
+
+/* Responsive navbar */
+@media screen and (max-width: 600px) {
+    .nav-links li {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+/* Clearfix */
+.navbar::after {
+    content: "";
+    display: table;
+    clear: both;
 }
