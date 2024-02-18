@@ -28,6 +28,11 @@ h3 {
     text-align: center;
 }
 
+h2 {
+    text-align: center;
+    color: rgb(24, 45, 93);
+}
+
 /* Unordered List Styles */
 ul {
     list-style: none;
@@ -86,18 +91,23 @@ ul {
     clear: both;
 }
 
+.content-container li {
+    background: linear-gradient(135deg, #6e45e2 0%, #88d3ce 100%);
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
 .content-container ul li a {
     display: block;
     padding: 15px 20px;
     color: white;
     text-decoration: none;
     transition: background-color 0.3s ease;
-    /* Apply the gradient background to these links specifically */
-    background: linear-gradient(135deg, #6e45e2 0%, #88d3ce 100%);
 }
 
 .content-container ul li a:hover {
     background: linear-gradient(135deg, #88d3ce 0%, #6e45e2 100%);
+    border-radius: 4px;
 }
 
 /* Footer Styles */
