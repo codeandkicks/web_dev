@@ -175,3 +175,52 @@ section h2 {
     margin: 0 auto; /* This will center your video horizontally */
     max-width: 100%; /* Ensure it's not larger than its container on smaller screens */
 }
+.contact-form-container {
+    border: 1px solid #efe9e9; /* Border around the form */
+    padding: 20px; /* Padding inside the form container */
+    width: 100%; /* Adjust the width as needed or remove to allow flex sizing */
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    margin-bottom: 5px; /* Space between the label and the input field */
+    font-weight: bold; /* Makes the label text bold */
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 75%; /* Full width of the form container */
+    padding: 8px; /* Padding inside the input fields */
+    margin-bottom: 15px; /* Space between each field */
+    border: 1px solid #ddd; /* Border around the input fields */
+    border-radius: 4px; /* Rounded corners for the input fields */
+  }
+  
+  .contact-form button {
+    width: 77.25%;
+    padding: 10px 15px; /* Padding inside the button */
+    background-color: #007BFF; /* Background color of the button */
+    color: white; /* Text color of the button */
+    border: none; /* Removes the default border of the button */
+    border-radius: 4px; /* Rounded corners for the button */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering over the button */
+    margin-top: 10px; /* Space between the last input field and the button */
+  }
+  
+  .contact-form button:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+  }
+  
+  /* You might also want to add focus styles for accessibility */
+  .contact-form input[type="text"]:focus,
+  .contact-form input[type="email"]:focus,
+  .contact-form textarea:focus {
+    outline: none; /* Removes the default focus outline */
+    border-color: #007BFF; /* Adds a blue border color to indicate focus */
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Optional - adds a glow effect */
+  }
