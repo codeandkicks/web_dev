@@ -24,6 +24,10 @@ h1 {
     font-size: 2.5rem;
 }
 
+h3 {
+    text-align: center;
+}
+
 /* Unordered List Styles */
 ul {
     list-style: none;
@@ -118,4 +122,56 @@ footer {
     content: "";
     display: table;
     clear: both;
+}
+
+/* Portfolio Sections */
+section {
+    margin-bottom: 30px;
+}
+
+/* Section Titles */
+section h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* Cards for projects */
+.project-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Add more styling as needed... */
+
+/* Responsive grid system */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .project-grid {
+        grid-template-columns: 1fr; /* Stack cards on smaller screens */
+    }
+}
+
+.homepage-video {
+    width: 500px; /* Set the width of your video */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Block-level elements can receive margin auto for centering */
+    margin: 0 auto; /* This will center your video horizontally */
+    max-width: 100%; /* Ensure it's not larger than its container on smaller screens */
 }
