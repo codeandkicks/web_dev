@@ -24,13 +24,8 @@ h1 {
     font-size: 2.5rem;
 }
 
-h3 {
+h2, h3, h4 {
     text-align: center;
-}
-
-h2 {
-    text-align: center;
-    color: rgb(24, 45, 93);
 }
 
 /* Unordered List Styles */
@@ -231,3 +226,56 @@ section h2 {
     border-color: #007BFF; /* Adds a blue border color to indicate focus */
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); /* Optional - adds a glow effect */
   }
+  .project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Adjust the gap as needed */
+    padding: 10px 0;
+}
+
+.portfolio-image {
+    flex: 1 0 calc(25% - 15px); /* Adjust the width for four images per row, accounting for the gap */
+    max-width: calc(25% - 15px); /* Adjust the width for four images per row, accounting for the gap */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Optional: Adds a transition effect when enlarging the image */
+}
+
+/* Style for enlarged image */
+.enlarged-image-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+    .enlarged-image {
+        max-width: 90vw;
+        max-height: 90vh;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .close-button {
+        position: absolute;
+        top: -40px; /* Adjust this value as needed to position the button above the image */
+        right: 0;
+        padding: 5px 10px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 5;
+        display: none;
+    }
