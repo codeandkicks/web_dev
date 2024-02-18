@@ -51,7 +51,7 @@ ul {
 }
 
 /* Specific styles for nav items */
-.nav-item {
+.nav-links .nav-item {
     display: block;
     color: white; /* White text color */
     text-align: center;
@@ -61,17 +61,21 @@ ul {
 }
 
 /* Change link color on hover for nav items */
-.nav-item:hover {
+.nav-links .nav-item:hover {
     background-color: #ddd; /* Light grey background color for hover */
     color: black; /* Change text color on hover */
+}
+
+.nav-links li {
+    background: none; /* Remove any background */
+    border-radius: 0; /* Reset border-radius if needed */
+    margin-bottom: 0; /* Reset bottom margin if needed */
 }
 
 /* Responsive navbar */
 @media screen and (max-width: 600px) {
     .nav-links li {
-        float: none;
         display: block;
-        text-align: left;
     }
 }
 
@@ -82,23 +86,17 @@ ul {
     clear: both;
 }
 
-/* List Item Styles */
-li {
-    background: linear-gradient(135deg, #6e45e2 0%, #88d3ce 100%);
-    margin-bottom: 10px;
-    border-radius: 4px;
-}
-
-/* Styles for other links outside the navbar */
-li a:not(.nav-item) {
+.content-container ul li a {
     display: block;
     padding: 15px 20px;
     color: white;
     text-decoration: none;
     transition: background-color 0.3s ease;
+    /* Apply the gradient background to these links specifically */
+    background: linear-gradient(135deg, #6e45e2 0%, #88d3ce 100%);
 }
 
-li a:not(.nav-item):hover {
+.content-container ul li a:hover {
     background: linear-gradient(135deg, #88d3ce 0%, #6e45e2 100%);
 }
 
@@ -176,7 +174,6 @@ section h2 {
     max-width: 100%; /* Ensure it's not larger than its container on smaller screens */
 }
 .contact-form-container {
-    border: 1px solid #efe9e9; /* Border around the form */
     padding: 20px; /* Padding inside the form container */
     width: 100%; /* Adjust the width as needed or remove to allow flex sizing */
   }
@@ -202,7 +199,7 @@ section h2 {
   }
   
   .contact-form button {
-    width: 77.25%;
+    width: 10%;
     padding: 10px 15px; /* Padding inside the button */
     background-color: #007BFF; /* Background color of the button */
     color: white; /* Text color of the button */
