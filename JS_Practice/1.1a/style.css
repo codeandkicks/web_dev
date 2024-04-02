@@ -1,0 +1,294 @@
+﻿@charset "UTF-8";
+/* CSS Document */
+
+
+/** * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/) * http://cssreset.com */
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video
+{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+{
+	display: block;
+}
+
+body
+{
+	line-height: 1;
+	overflow-x: hidden
+}
+
+ol, ul
+{
+	list-style: none;
+}
+
+blockquote, q
+{
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,q:before, q:after
+{
+	content: '';
+	content: none;
+}
+
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* End Reset CSS */
+
+
+
+
+
+
+
+
+body {
+	background-color: #000;
+}
+
+article {
+	margin-bottom: 10px;
+}
+
+h1 {
+	font-size: 2em;
+	margin: 10px 0 10px 0;
+	color: firebrick;
+}
+
+h2 {
+	font-size: 1.5em;
+	margin: 10px 0 10px 0;
+}
+
+h3 {
+	font-size: 1.2em;
+	margin: 5px 0 5px 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	font-weight: bold;
+	color: firebrick;
+}
+
+a:visited {
+	color: #c0c0c0;
+}
+
+ul {
+	list-style: disc;
+	padding-left: 20px;
+}
+
+li {
+	padding: 0 0 5px 10px;
+}
+
+#main {
+	background-image: url(../images/pianokeys.png), url(../images/pianokeys2.png), url(../images/bars.png);
+	background-repeat: repeat-y, repeat-y, repeat;
+	background-position: left top, right top, center top;
+}
+
+#main_content {
+	margin: 0 auto;
+	padding: 20px 20px 50px 20px;
+	width: 1024px;
+	background-color: #fff;
+	color: #000;
+	border-left: #000 3px solid;
+	border-right: #000 3px solid;
+}
+
+p {
+	line-height: 1.5em;
+	font-size: 1em;
+}
+
+#main_content a {
+	color: #777777;
+}
+
+#main_content a:hover {
+	color: #444444;
+}
+
+header {
+	width: 1024px;
+	height: 130px;
+}
+
+#sitelogo {
+	display: block;
+	width: 320px;
+	float: left;
+}
+
+#headerinfo {
+	display: block;
+	width: 700px;
+	text-align: right;
+	float: right;
+}
+
+footer {
+	text-align: center;
+	background-color: #000;
+	padding: 30px;
+	color: #fff;
+}
+
+footer a {
+	color: #fff;
+}
+
+.clear {
+	clear:both;
+}
+
+.item, .classes {
+	border: none;
+}
+
+.item p {
+	font-weight: bold;
+}
+
+#details img {
+	width: 1000px;
+	border: #000 1px solid;
+}
+
+#thumbnails {
+	text-align: center;
+}
+
+.itemdetails {
+	text-align: left;
+}
+
+.itemthumbnail, .itemthumb {
+	float: left;
+}
+
+.itemthumbnail, .itemthumbnail img, .itemthumb, .itemthumb img {
+	width: 190px;
+}
+
+.itemthumbnail {
+	max-height: 150px;
+	margin: 6px;
+	overflow: hidden;
+	height: 100px;
+}
+
+.itemthumb {
+	margin-right: 30px;
+}
+
+.itemthumbnail, .itemthumb img {
+	border: #000 1px solid;
+}
+
+.itemdesc {
+	width: 700px;
+	float: left;
+}
+
+.itemprice, .itemtotal {
+	width: 100px;
+	float: left;
+	text-align: right;
+}
+
+.itemquantity, .days {
+	width: 100px;
+	float: left;
+	text-align: center;
+}
+
+.itemquantity input {
+	border: #000 1px solid;
+	width: 20px;
+	text-align: center;
+	font-size: 1em;
+	font-family: inherit;
+}
+
+.availableclasses div p {
+	padding: 5px;
+}
+
+.selection {
+	width: 30px;
+	float: left;
+	text-align: center;
+}
+
+.instructor {
+	width: 770px;
+	float: left;
+}
+
+.times {
+	width: 100px;
+	float: left;
+	text-align: center;
+}
+
+.order_buttons {
+	width: 200px;
+	float:left;
+	text-align: right;
+}
+
+.selection, .instructor, .days, .times {
+	border: #000 1px solid;
+}
+
+.threecol1 {
+	width: 30%;
+	float: left;
+	text-align: left;
+}
+
+.buttons {
+	font-size: 1em;
+	font-family: inherit;
+	color: #fff;
+	border: #f4a717 1px solid;
+	width: 150px;
+	background: #f4a717; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(top, #fdb62c , #ce7e0f); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(bottom, #fdb62c, #ce7e0f); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(bottom, #fdb62c, #ce7e0f); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to bottom, #fdb62c , #ce7e0f); /* Standard syntax */
+    border-radius: 5px;
+	padding: 5px;
+	margin: 5px;
+}
+
+.social img {
+	width: 30px;
+	height: 30px;
+	margin: 5px;
+}
