@@ -155,16 +155,13 @@ section h2 {
     border-radius: 4px;
 }
 
-/* Add more styling as needed... */
 
-/* Responsive grid system */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .project-grid {
         grid-template-columns: 1fr; /* Stack cards on smaller screens */

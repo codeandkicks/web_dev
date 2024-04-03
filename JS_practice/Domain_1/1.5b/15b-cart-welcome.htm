@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><!-- InstanceBegin template="/Templates/Design Template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+    <meta charset="utf-8" />
+
+    <!-- InstanceBeginEditable name="docname" -->
+    <title>The Music Store - Shopping Cart</title>
+    <!-- InstanceEndEditable -->
+    
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+
+    <!-- InstanceBeginEditable name="headscripts" -->
+    
+    <!-- InstanceEndEditable -->
+
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:Order msdt:dt="string">399833800.000000</mso:Order>
+<mso:ContentTypeId msdt:dt="string">0x0101009F1A1A9B9131484CB900844943E1876F</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body onload="welcome();">
+   <section id="main">
+	   	<section id="main_content">
+  			<header>
+  				<div id="sitelogo">
+					<a href="index.html"><img src="images/logo.png" alt="The Music Store"/></a>
+				</div>
+    <!-- InstanceBeginEditable name="pagecontents" -->
+    			<div id="headerinfo">
+					<p>&nbsp;</p>
+					<p>Call now: <span style="font-size: 1.5em;">800.555.3839</span></p>
+ 				</div>
+	    	</header>
+
+<!-- End Header -->
+
+<!-- Begin Content -->
+
+
+	        <h1>Shopping Cart</h1>
+	        
+            <section id="cart_items">
+                <article class="item">
+                    <div class="itemdesc" style="text-align: center;">
+                        <h2>Description</h2>
+                    </div>
+
+                    <div class="itemquantity">
+                        <h2>Quantity</h2>
+                    </div>
+
+                    <div class="itemprice">
+                        <h2>Price</h2>
+                    </div>
+                    <div class="itemtotal">
+                        <h2>Total</h2>
+                    </div>
+                </article>
+
+                <div class="clear"></div>
+                <hr />
+                <article class="item">
+                    <div class="itemdesc">
+                        <div class="itemthumb">
+                            <a href="products.htm"><img src="images/mandolin.jpg" alt="Mandolin" /></a>
+                        </div>
+                        <p>Mandolin</p>
+                    </div>
+
+                    <div class="itemquantity">
+                        <p>
+                            <input type="text" value="1" id="manqty"> <br/>
+                            <button id="manqtyadd" onclick="javascript: document.getElementById('manqty').value++;">+</button>
+                            <button id="manqtysubtract" onclick="javascript: document.getElementById('manqty').value--;">-</button>  
+                            <button id="manqtyzero" onclick="javascript: document.getElementById('manqty').value = 0;">Clear</button>
+                            <button id="manqtyfive" onclick="addFive('manqty');">Add Five</button>
+                        </p>
+                        </div>
+
+                    <div class="itemprice">
+                        <p id="manprice">379.99</p>
+                    </div>
+                    <div class="itemtotal">
+                        <p id="mantotal">379.99</p>
+                    </div>
+                </article>
+
+
+                <div class="clear"></div>
+                <hr />
+                <article class="item">
+                    <div class="itemdesc">
+                        <div class="itemthumb">
+                            <a href="products.htm"><img src="images/DRUM.jpg" alt="Drum" /></a>
+                        </div>
+                        <p>Drum set 32" steel</p>
+                    </div>
+
+                    <div class="itemquantity">
+                        <p><input type="text" value="1"></p>
+                    </div>
+
+                    <div class="itemprice">
+                        <p>129.99</p>
+                    </div>
+                    <div class="itemtotal">
+                        <p>129.99</p>
+                    </div>
+                </article>
+
+                <div class="clear"></div>
+                <hr />
+                <article class="item">
+                    <div class="itemdesc">
+                        <div class="itemthumb">
+                            <a href="products.htm"><img src="images/Trombone.jpg" alt="Trombone" /></a>
+                        </div>
+                        <p>Trombone</p>
+                    </div>
+
+                    <div class="itemquantity">
+                        <p><input type="text" value="1"></p>
+                    </div>
+
+                    <div class="itemprice">
+                        <p>299.99</p>
+                    </div>
+                    <div class="itemtotal">
+                        <p>299.99</p>
+                    </div>
+                </article>
+
+            </section>
+
+            <div class="clear"></div>
+            <hr />
+
+            <section>
+                <article class="item">
+                    <div class="itemdesc">
+                        <p>&nbsp;</p>
+                    </div>
+
+                    <div class="itemquantity">
+                        <p>&nbsp;</p>
+                    </div>
+                    <div class="itemprice" style="text-align: right;">
+                        <p>Subtotal:</p>
+                        <p>Sales Tax:</p>
+                        <p>&nbsp;</p>
+                        <h2 style="margin-top: 0;">Total:</h2>
+                    </div>
+
+                    <div class="itemtotal">
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
+                        <p>________</p>
+                        <p>&nbsp;</p>
+                    </div>
+                </article>
+                <div class="clear"></div>
+                <article class="item">
+                    <div class="itemdesc">
+                        <p>&nbsp;</p>
+                    </div>
+
+                    <div class="order_buttons">
+                        <p><input type="button" class="buttons" value="Update Cart"></p>
+                        <p><input type="button" class="buttons" value="Checkout" onclick="openCheckOut();"></p>
+                        <p><input type="button" class="buttons" value="Close Checkout" onclick="closeCheckOut();" /></p>
+                    </div>
+
+                </article>
+
+            </section>
+
+	<div class="clear"></div>
+
+        	
+
+    <!-- InstanceEndEditable -->
+
+<!-- End Content -->
+
+
+	   </section>
+   </section>
+
+
+<!-- Begin Footer -->
+
+	   <footer>
+			<p><a href="index.html">Home</a> | <a href="products.htm">Products</a> | <a href="lessons.htm">Lessons</a> | <a href="contact.htm">Contact Us</a></p>
+
+       		<p>Copyright &copy; 2017 The Music Store, 1000 Broadway, Salt Lake City, UT 84103</p>
+
+       		<p class="social"><img src="images/icon_facebook.png" alt="Facebook"/><img src="images/icon_googleplus.png" alt="Google+"/><img src="images/icon_linkedin.png" alt="LinkedIn"/><img src="images/icon_twitter.png" alt="Twitter"/><img src="images/icon_youtube.png" alt="YouTube"/><img src="images/icon_rss.png" alt="RSS"/></p>
+	   </footer>
+
+    <script>
+        function addFive(qty) {
+            var newQty = parseInt(document.getElementById(qty).value);
+            newQty += 5;
+            document.getElementById(qty).value = newQty;
+        }
+        function openCheckOut() {   
+            checkWin = window.open("checkout.htm", "", "width=300, height=300");          
+        }
+        function closeCheckOut() {
+            checkWin.close();
+        }
+        // enter the alert, confirm, and prompt keywords to replace the comments in the welcome function
+        function welcome() {
+            yourName = //("Enter your name");
+            if (//("Is your name correct?") == true)
+                {
+                //("Welcome, " + yourName);
+            }
+        }
+    </script>
+
+</body>
+<!-- InstanceEnd --></html>

@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <meta charset="utf-8" />
+    <title>Calculating Practice Hours</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:Order msdt:dt="string">399834000.000000</mso:Order>
+<mso:ContentTypeId msdt:dt="string">0x0101009F1A1A9B9131484CB900844943E1876F</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body onload="alert()";>
+    <section id="main">
+        <section id="main_content">
+            <h1>Guitar Lessons</h1>
+            <p>We have a comprehensive 20-hour series on learning to play the guitar.</p>
+            <p>
+                Enter the number of hours per week you can dedicate to learning:
+                <input type="number" id="practiceHours" name="Practice Hours:"
+                       onchange="getPracticeHours();" />
+            </p>
+            <p id="practiceWeeks">&nbsp;</p>
+
+            <script language="JavaScript">
+                function getPracticeHours() {
+                    document.getElementByID('practiceWeeks').innerHTML =
+                    'It will take you ' + 20 / parseInt(document.getElementById('practiceHours').value) +
+                    ' weeks to finish this program';
+                 }
+
+            </script>
+        </section>
+    </section>
+</body>
+</html>

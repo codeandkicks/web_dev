@@ -1,0 +1,216 @@
+﻿<!DOCTYPE html>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"><!-- InstanceBegin template="/Templates/Design Template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+    <meta charset="utf-8" />
+
+    <!-- InstanceBeginEditable name="docname" -->
+    <title>The Music Store - Shopping Cart</title>
+    <!-- InstanceEndEditable -->
+    
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+
+    <!-- InstanceBeginEditable name="headscripts" -->
+    
+    <!-- InstanceEndEditable -->
+
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:Order msdt:dt="string">399963600.000000</mso:Order>
+<mso:ContentTypeId msdt:dt="string">0x0101009F1A1A9B9131484CB900844943E1876F</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+   <section id="main">
+	   	<section id="main_content">
+  			<header>
+  				<div id="sitelogo">
+					<a href="index.html"><img src="images/logo.png" alt="The Music Store"/></a>
+				</div>
+    <!-- InstanceBeginEditable name="pagecontents" -->
+    			<div id="headerinfo">
+					<p>&nbsp;</p>
+					<p>Call now: <span style="font-size: 1.5em;">800.555.3839</span></p>
+ 				</div>
+	    	</header>
+
+<!-- End Header -->
+
+<!-- Begin Content -->
+
+
+	        <h1>Shopping Cart</h1>
+	        
+	        <section id="cart_items">
+	        <article class="item">
+				<div class="itemdesc" style="text-align: center;">
+					<h2>Description</h2>
+				</div>
+				
+				<div class="itemquantity">
+					<h2>Quantity</h2>
+				</div>
+				
+				<div class="itemprice">
+					<h2>Price</h2>
+				</div>
+
+                <div class="itemtotal">
+                    <h2>Total</h2>
+                </div>
+			</article>
+	        	
+	<div class="clear"></div>
+        	<hr />
+
+	        <article class="item">
+				<div class="itemdesc">
+	    	    	<div class="itemthumb">
+						<a href="products.htm"><img src="images/mandolin.jpg" alt="Mandolin" /></a>
+					</div>
+					<p>Mandolin</p>
+				</div>
+				
+				<div class="itemquantity">
+					<p><input type="text" value="1" id="manqty"></p>
+				</div>
+				
+				<div class="itemprice">
+					<p id="manprice">379.99</p>
+				</div>
+
+                <div class="itemtotal">
+                    <p id="mantotal">379.99</p>
+                </div>
+			</article>
+        	
+	        	
+	<div class="clear"></div>
+        	<hr />
+
+	        <article class="item">
+				<div class="itemdesc">
+	    	    	<div class="itemthumb">
+						<a href="products.htm"><img src="images/DRUM.jpg" alt="Drum" /></a>
+					</div>
+					<p>Drum set 32" steel</p>
+				</div>
+				
+				<div class="itemquantity">
+					<p><input type="text" value="1" id="drumqty"></p>
+				</div>
+				
+				<div class="itemprice">
+					<p id="drumprice">129.99</p>
+				</div>
+
+                <div class="itemtotal">
+                    <p id="drumtotal">129.99</p>
+                </div>
+			</article>
+	        	
+	<div class="clear"></div>
+        	<hr />
+
+	        <article class="item">
+				<div class="itemdesc">
+	    	    	<div class="itemthumb">
+						<a href="products.htm"><img src="images/Trombone.jpg" alt="Trombone" /></a>
+					</div>
+					<p>Trombone</p>
+				</div>
+				
+				<div class="itemquantity">
+					<p><input type="text" value="1" id="tromqty"></p>
+				</div>
+				
+				<div class="itemprice">
+					<p id="tromprice">299.99</p>
+				</div>
+
+                <div class="itemtotal">
+                    <p id="tromtotal">299.99</p>
+                </div>
+			</article>
+	        	
+			</section>
+			
+	<div class="clear"></div>
+        	<hr />
+        	
+        	<section>
+	        <article class="item">
+				<div class="itemdesc">
+					<p>&nbsp;</p>
+				</div>
+				
+                <div class="itemquantity">
+                    <p>&nbsp;</p>
+                </div>
+				<div class="itemprice" style="text-align: right;">
+					<p>Subtotal:</p>
+					<p>Sales Tax:</p>
+                    <p>Discount:</p>
+					<p>&nbsp;</p>
+					<h2 style="margin-top: 0;">Total:</h2>
+				</div>
+				
+				<div class="itemtotal">
+					<p id="subtotal">&nbsp;</p>
+					<p id="salesTax">&nbsp;</p>
+                    <p id="discount">10.00</p>
+					<p>________</p>
+					<h2 style="margin-top: 0;" id="grandtotal">total</h2>
+				</div>
+			</article>
+
+   	<div class="clear"></div>
+	        <article class="item">
+				<div class="itemdesc">
+					<p>&nbsp;</p>
+				</div>
+		<!-- Add the additon and subtraction operators in the correct places -->		
+				<div class="order_buttons">
+					<p><input type="button" class="buttons" value="Update Cart"
+                              onclick="javascript: document.getElementById('subtotal').innerHTML
+    // parseFloat(document.getElementById('mantotal').innerHTML)
+    // parseFloat(document.getElementById('drumtotal').innerHTML)
+    // parseFloat(document.getElementById('tromtotal').innerHTML);
+    document.getElementById('salesTax').innerHTML = parseFloat(document.getElementById('subtotal').innerHTML * .07).toFixed(2);
+    document.getElementById('grandtotal').innerHTML
+        = (parseFloat(document.getElementById('subtotal').innerHTML)
+        + parseFloat(document.getElementById('salesTax').innerHTML)
+        - parseFloat(document.getElementById('discount').innerHTML)).toFixed(2);" /></p>
+					<p><input type="button" class="buttons" value="Checkout"></p>
+				</div>
+				
+			</article>
+	        	
+			</section>
+
+	<div class="clear"></div>
+
+        	
+
+    <!-- InstanceEndEditable -->
+
+<!-- End Content -->
+
+
+	   </section>
+   </section>
+
+
+<!-- Begin Footer -->
+
+	   <footer>
+			<p><a href="index.html">Home</a> | <a href="products.htm">Products</a> | <a href="lessons.htm">Lessons</a> | <a href="contact.htm">Contact Us</a></p>
+
+       		<p>Copyright &copy; 2017 The Music Store, 1000 Broadway, Salt Lake City, UT 84103</p>
+
+       		<p class="social"><img src="images/icon_facebook.png" alt="Facebook"/><img src="images/icon_googleplus.png" alt="Google+"/><img src="images/icon_linkedin.png" alt="LinkedIn"/><img src="images/icon_twitter.png" alt="Twitter"/><img src="images/icon_youtube.png" alt="YouTube"/><img src="images/icon_rss.png" alt="RSS"/></p>
+	   </footer>
+  
+</body>
+<!-- InstanceEnd --></html>
