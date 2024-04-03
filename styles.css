@@ -70,8 +70,8 @@ ul {
     background: none; /* Remove any background */
     border-radius: 0; /* Reset border-radius if needed */
     margin-bottom: 0; /* Reset bottom margin if needed */
-}
 
+}
 /* Responsive navbar */
 @media screen and (max-width: 600px) {
     .nav-links li {

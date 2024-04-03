@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+    body {background-color: #333333;
+        color: #eaeaea;}
+    #gallery {position: relative;}
+    figure {position: absolute;
+        left: 280px;
+        text-align: center;
+        opacity: 0.25;}
+    #gallery ul {width: 300px;
+        list-style: none;}
+    #gallery li {display: inline;
+        float: left;
+        padding: 10px;}
+    #gallery img {border: none;}
+    #gallery a {text-decoration: none;
+        color: #eaeaea;
+        font-style: italic;}
+    #gallery span {position: absolute;
+        left: -1000px;
+        opacity: 0;
+        transition: opacity 3s ease-in-out;}
+    #gallery a:hover span {position: absolute;
+        top: 16px; left: 320px;
+        text-align: center; opacity: 1;}
+    </style>
+</head>
+<body>
+    <h1>Image Gallery</h1>
+    <div id="gallery">
+        <figure><img src="photo1.jpg"></figure>
+        <ul>
+            <li>
+                <a href="photo1.jpg"><img src="photo1thumb.jpg" width="100" height="75" alt="Golden Gate Bridge">
+                <span><img src="photo1.jpg" width="400" height="300" alt="Golden Gate Bridge"><br>Golden Gate Bridge</span></a>
+            </li>
+            <li>
+                <a href="photo2.jpg"><img src="photo2thumb.jpg" width="100" height="75" alt="Rocky Shore">
+                <span><img src="photo2.jpg" width="400" height="300" alt="Rocky Shore"><br>Rocky Shore</span></a>
+            </li>
+            <li>
+                <a href="photo3.jpg"><img src="photo3thumb.jpg" width="100" height="75" alt="Forest View">
+                <span><img src="photo3.jpg" width="400" height="300" alt="Forest View"><br>Forest View</span></a>
+            </li>
+            <li>
+                <a href="photo4.jpg"><img src="photo4thumb.jpg" width="100" height="75" alt="Forest Shore">
+                <span><img src="photo4.jpg" width="400" height="300" alt="Forest Shore"><br>Forest Shore</span></a>
+            </li>
+            <li>
+                <a href="photo5.jpg"><img src="photo5thumb.jpg" width="100" height="75" alt="Cliff Face">
+                <span><img src="photo5.jpg" width="400" height="300" alt="Cliff Face"><br>Cliff Face</span></a>
+            </li>
+            <li>
+                <a href="photo6.jpg"><img src="photo6thumb.jpg" width="100" height="75" alt="Sunset Shore">
+                <span><img src="photo6.jpg" width="400" height="300" alt="Sunset Shore"><br>Sunset Shore</span></a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1 @@
+﻿const salesTaxRate = .075;

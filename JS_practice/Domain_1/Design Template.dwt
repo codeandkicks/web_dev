@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<head>
+    <meta charset="utf-8" />
+
+    <!-- TemplateBeginEditable name="docname" -->
+    <title>The Music Store</title>
+    <!-- TemplateEndEditable -->
+    
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+
+    <!-- TemplateBeginEditable name="headscripts" -->
+    
+    <!-- TemplateEndEditable -->
+
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:Order msdt:dt="string">409737400.000000</mso:Order>
+<mso:ContentTypeId msdt:dt="string">0x0101009F1A1A9B9131484CB900844943E1876F</mso:ContentTypeId>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+   <section id="main">
+	   	<section id="main_content">
+  			<header>
+  				<div id="sitelogo">
+					<a href="index.html"><img src="images/logo.png" alt="The Music Store"/></a>
+				</div>
+    <!-- TemplateBeginEditable name="pagecontents" -->
+    			<div id="headerinfo">
+
+ 				</div>
+	    	</header>
+
+<!-- End Header -->
+
+<!-- Begin Content -->
+
+
+	        <h1>Shopping Cart</h1>
+	        
+	        <div id="cart_items">
+	        <article class="orderitem">
+	        	<div class="itemthumb">
+				</div>
+				
+				<div class="itemdesc">
+				</div>
+				
+				<div class="price">
+				</div>
+				
+				<div class="quantity">
+				</div>
+			</article>
+	        	
+			</div>
+
+
+    <!-- TemplateEndEditable -->
+
+<!-- End Content -->
+
+
+	   </section>
+   </section>
+
+
+<!-- Begin Footer -->
+
+	   <footer>
+			<p><a href="index.html">Home</a> | <a href="products.htm">Products</a> | <a href="lessons.htm">Lessons</a> | <a href="contact.htm">Contact Us</a></p>
+
+       		<p>Copyright &copy; 2017 The Music Store, 1000 Broadway, Salt Lake City, UT 84103</p>
+
+       		<p class="social"><img src="images/icon_facebook.png" alt="Facebook"/><img src="images/icon_googleplus.png" alt="Google+"/><img src="images/icon_linkedin.png" alt="LinkedIn"/><img src="images/icon_twitter.png" alt="Twitter"/><img src="images/icon_youtube.png" alt="YouTube"/><img src="images/icon_rss.png" alt="RSS"/></p>
+	   </footer>
+  
+</body>
+</html>
